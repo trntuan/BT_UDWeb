@@ -1,0 +1,60 @@
+﻿@model bai3_lop.Models.EmpModel
+
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Thông tin thành viên đăng ký</h2>
+
+<h2>THÔNG TIN THÀNH VIÊN ĐÃ ĐĂNG KÝ</h2>
+<table>
+    <tr>
+        <td rowspan="8">
+            <img style="border-radius:50%" width="200px" src="@ViewBag.Avatar" alt="Alternate Text" />
+        </td>
+    </tr>
+    <tr>
+        <td>Mã nhân viên:</td>
+        <td>
+            @ViewBag.EmpID
+        </td>
+    </tr>
+    <tr>
+        <td>Họ tên:</td>
+        <td>
+            @ViewBag.Name
+        </td>
+    </tr>
+    <tr>
+        <td>Ngày sinh:</td>
+        <td>
+            @ViewBag.BirthOfDate
+        </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>
+            @ViewBag.Email
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mật khẩu:</td>
+        <td>
+            @ViewBag.Password
+        </td>
+    </tr>
+    <tr>
+        <td>Phòng ban:</td>
+        <td>
+            @ViewBag.Department
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="@Url.Action("Index", "NhanVien_62132542")">Quay lại</a>
+
+        </td>
+    </tr>
+</table>
+</div>
